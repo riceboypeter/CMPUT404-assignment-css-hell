@@ -1,0 +1,66 @@
+/*  You can tell that I really like Sherlock :D 
+    1.html is A Study in Scarlet
+    2.html is The Hound of the Baskervilles
+    3.html is The Sign of the Four
+
+    TODO:
+    [*] Theme paragraphs with CSS
+    [*] Theme header tags with CSS
+    [*] Theme images and images captions with CSS
+*/
+
+/* Setting the font style and background colour */
+html{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: beige;
+}
+
+/* fancy big letter of each paragraph of a chapter + underline + big, also ignores the title text */
+div:not(.container)>p:first-of-type::first-letter{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+/* following starting paragraph letters are slightly larger but not as large as the first */
+div:not(.container)>p::first-letter{
+    font-size: 1.1em;
+}
+
+/* Increase the bottom margins too for better spacing */
+p{
+    margin-bottom: 1.1em;
+}
+
+/* all titles and headers use a different font and are dark brown
+   note: h3 and h5 aren't actually present in any of the html but are included in the CSS so I include them here too */
+h1,h2,h3,h4,h5,title{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #4e2400;
+}
+
+/* chapter title + name + main title have underlines */
+h1,h2,title{
+    text-decoration: underline;
+}
+
+/* book title has extra thicc underline */
+title{
+    text-decoration-thickness: 3;
+}
+
+/* subtitle is italicized */
+h4{
+    font-style: italic;
+}
+
+/* add a drop shadow on the image, slightly round the corners, and add a border */
+img{
+    box-shadow: 0.4em 0.4em 5px gray;
+    border-radius: 0.4em;
+    border: black 1em;
+    max-width: 150px;
+}
+
+figcaption{
+    font-style: italic;
+}

@@ -21,4 +21,8 @@ repository and (C) 2013 Abram Hindle visibile in the text.
 
 Code is licensed under the Apache 2.0 license.
 
-
+Changes made to HTML files:
+===========================
+File structure: added a subfolder for the cover images
+All files: inserted a tag to link to the CSS file after the CSS in the file
+Books 2 and 3: inserted a caption for the cover, and changed the file name of the cover as there are multiple covers in the directory
