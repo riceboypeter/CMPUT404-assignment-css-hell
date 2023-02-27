@@ -1,0 +1,145 @@
+html{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+}
+
+body{
+    display: grid;
+    grid-template:
+            "header  header "
+            "content sidebar";
+    margin: 0;
+    background: linear-gradient( 90deg,
+        rgba(255,255,255,1) 0%, 
+        rgb(125, 125, 125) 65%, 
+        rgb(0, 0, 0) 100%);
+}
+
+/* site banner + text */
+header{
+    grid-area: header;
+}
+
+.navbar{
+    position: relative;
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 10px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.navbar_item{
+    display: inline-block;
+}
+
+.navbar_item a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar_item a:hover{
+    background-color: rgb(30, 30, 30);
+}
+
+.banner_header{
+    background-color: #add8e6;
+}
+
+.my_name {
+    position: relative;
+    font-size: 5em;
+    color: black;
+    padding-left: 20px;
+}
+
+.subtext{
+    color:black;
+    font-style: italic;
+    position: relative;
+    padding-bottom: 10px;
+    padding-left: 25px;
+}
+
+.banner_img{
+    width:0px;
+    height:0px;
+}
+
+/* sidebar */
+aside{
+    grid-area: sidebar;
+    background: darkgray;
+    border-radius: 0.4em;
+    margin: 0.5em;
+    padding: 0.5em;
+    text-align: center;
+    list-style-type: none;
+}
+
+/* about */
+.about_section{
+    position: relative;
+    overflow: hidden;
+}
+
+.about_section p{
+    inline-size: 500px;
+    overflow: auto;
+}
+
+.about_section img{
+    padding-top: 0.5em;
+    float:left;
+    width: 10%;
+    height: 10%;
+    padding-inline: 0.5em;
+}
+
+/* past jobs */
+.history_section {
+    text-align: left;
+    padding-left: 2em;
+    position: relative;
+}
+
+.history_section p{
+    inline-size: 500px;
+    overflow: auto;
+}
+
+/* what I bring */
+.bring_section {
+    text-align: left;
+    padding-left: 2em;
+    position: relative;
+}
+
+.bring_section p{
+    inline-size: 600px;
+    overflow: auto;
+}
+
+h2{
+    text-decoration: overline;
+}
+
+h3{
+    font-style: italic;
+}
+
+.job_title{
+    font-size: 1.2em;
+}
+
+.job_title::first-letter{
+    text-decoration: underline;
+}
+
+.time{
+    font-style: italic;
+    color: rgb(70, 70, 70);
+}
