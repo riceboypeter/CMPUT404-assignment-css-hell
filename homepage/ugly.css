@@ -1,0 +1,133 @@
+html{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: black;
+}
+
+body{
+    display: grid;
+    grid-template:
+            "header  header "
+            "content sidebar";
+    margin: 0;
+}
+
+/* site banner + text */
+header{
+    grid-area: header;
+}
+
+.navbar{
+    position: relative;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: red;
+}
+
+.navbar_item{
+    display: inline-block;
+}
+
+.navbar_item a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.navbar_item a:hover{
+    background-color: darkred;
+}
+
+.my_name {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 5em;
+    color: salmon;
+}
+
+.subtext{
+    color:turquoise;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.banner_img{
+    width: 100%;
+    height: 200px;
+}
+
+/* sidebar */
+aside{
+    grid-area: sidebar;
+    background: darkgray;
+    border-radius: 0.4em;
+    margin: 0.5em;
+    padding: 0.5em;
+    text-align: center;
+    list-style-type: none;
+}
+
+/* about */
+.about_section{
+    position: relative;
+    overflow: hidden;
+}
+
+.about_section img{
+    padding-top: 0.5em;
+    float:left;
+    width: 10%;
+    height: 10%;
+    padding-inline: 0.5em;
+}
+
+/* past jobs */
+.history_section {
+    text-align: center;
+    padding-left: 0.5em;
+    position: relative;
+}
+
+/* what I bring */
+.bring_section {
+    text-align: left;
+    padding-left: 0.5em;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    color: turquoise;
+}
+
+h2{
+    color: pink;
+}
+
+h3{
+    color: yellow;
+}
+
+.info_title{
+    color: yellow;
+}
+
+.job_title{
+    color: aqua;
+}
+
+.time{
+    font-style: italic;
+    color: beige;
+}
+
+p{
+    color: yellow;
+}
